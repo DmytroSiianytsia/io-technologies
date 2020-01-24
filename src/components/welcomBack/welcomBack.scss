@@ -96,9 +96,10 @@ $dark-text: #616983;
   }
 
   @keyframes twitching {
-    0%, 100% {}
+    0%, 100% {
+    }
     25% {
-     transform: translateX(3px);
+      transform: translateX(3px);
     }
     50% {
       transform: translateX(-3px);
@@ -130,7 +131,7 @@ $dark-text: #616983;
     transition: transform 0.3s;
   }
 
-  &__btn:hover &__arrow{
+  &__btn:hover &__arrow {
     transform: translate(18px, 18px);
   }
 
@@ -150,7 +151,6 @@ $dark-text: #616983;
     padding-left: 5px;
     color: #3a91e2;
     cursor: pointer;
-
   }
 }
 

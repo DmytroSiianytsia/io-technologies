@@ -7,7 +7,8 @@ class WelcomeBack extends Component {
         email: '',
         password: '',
         isCorrectEmail: '',
-        isCorrectPassword: ''
+        isCorrectPassword: '',
+        isDisabledLogIn: true
     };
 
     handleChange = (e) => {
@@ -30,20 +31,15 @@ class WelcomeBack extends Component {
     };
 
     handleBlurEmail = (e) => {
-        this.correctOrIncorrect(this.state.email.match(/.+@.+\..{2,}/), e)
+        this.correctOrIncorrect(this.state.email.match(/.+@.+\..{2,}/), e);
     };
 
     handleBlurPassword = (e) => {
-        this.correctOrIncorrect(this.state.password.match(/.{8,}/), e)
-    };
-
-    handleClick = () => {
-
+        this.correctOrIncorrect(this.state.password.match(/.{8,}/), e);
     };
 
     render() {
-        const {email, password, isCorrectEmail, isCorrectPassword} = this.state;
-
+        const {email, password, isCorrectEmail, isCorrectPassword, isDisabledLogIn} = this.state;
         return (
             <div className="right-container">
                 <div className="inner">
@@ -70,7 +66,7 @@ class WelcomeBack extends Component {
                             onBlur={e => this.handleBlurPassword(e)}
                         />
                         <div className={`underline ${isCorrectPassword}`}></div>
-                        <Link to="/dashboard" className="link" disable="true">
+                        <Link to="/dashboard" className="link">
                             <div className="inner__btn">
                                 LOG IN
                                 <img

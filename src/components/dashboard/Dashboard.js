@@ -4,14 +4,14 @@ import './dashboard.css';
 
 function Dashboard(props) {
     const projects = ['Flirchi', 'io', 'company name', 'facenews.com', 'Flirchi', 'io', 'company name', 'facenews.com'];
-    const listProjects = projects.map(project => {
+    const listProjects = projects.map((project, index) => {
         return (
-            <>
+            <div key={index}>
                 <div className="project">
                     {project}
                 </div>
                 <div className="underline"></div>
-            </>
+            </div>
         )
     });
     return (

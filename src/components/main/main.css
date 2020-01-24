@@ -2,6 +2,7 @@
   width: 70vw;
   min-height: 100vh;
   position: relative;
+  opacity: 0.8;
   background: linear-gradient(150deg, #48a4d9, #6180cc, #5248b4);
 }
 @media (max-width: 999px) {
