@@ -39,7 +39,7 @@ class WelcomeBack extends Component {
     };
 
     render() {
-        const {email, password, isCorrectEmail, isCorrectPassword, isDisabledLogIn} = this.state;
+        const {email, password, isCorrectEmail, isCorrectPassword} = this.state;
         return (
             <div className="right-container">
                 <div className="inner">
