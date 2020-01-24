@@ -43,6 +43,7 @@ class WelcomeBack extends Component {
 
     render() {
         const {email, password, isCorrectEmail, isCorrectPassword} = this.state;
+
         return (
             <div className="right-container">
                 <div className="inner">
@@ -69,7 +70,7 @@ class WelcomeBack extends Component {
                             onBlur={e => this.handleBlurPassword(e)}
                         />
                         <div className={`underline ${isCorrectPassword}`}></div>
-                        <Link to="/dashboard" className="link">
+                        <Link to="/dashboard" className="link" disable="true">
                             <div className="inner__btn">
                                 LOG IN
                                 <img
