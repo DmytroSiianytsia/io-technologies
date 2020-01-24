@@ -44,6 +44,7 @@
   opacity: 50%;
 }
 .main__text {
+  width: 440px;
   margin-top: 50px;
   text-align: center;
   font-weight: 300;
