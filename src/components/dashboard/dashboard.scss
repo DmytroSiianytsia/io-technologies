@@ -1,0 +1,39 @@
+.align-center {
+  text-align: center;
+}
+
+.frame {
+  width: 310px;
+  height: 280px;
+  overflow: auto;
+}
+
+.project {
+  margin-top: 5px;
+  padding: 19px 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  outline: none;
+  border: 0;
+  background: transparent;
+  color: #616983;
+}
+
+.project:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #616983;
+    border-radius: 8px;
+  }

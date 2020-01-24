@@ -1,0 +1,11 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+
+  @media (max-width: 999px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
