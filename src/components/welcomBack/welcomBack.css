@@ -28,6 +28,11 @@
   margin: auto;
   padding-left: 50px;
 }
+@media (max-width: 999px) {
+  .inner {
+    padding-left: 0;
+  }
+}
 .inner__title {
   margin-top: 190px;
   margin-bottom: 0;
