@@ -33,7 +33,6 @@ export const WelcomeBack = props => {
                         name="email"
                         value={email}
                         onChange={e => handleChange(e)}
-                        onBlur={e => handleBlurEmail(e)}
                     />
                     <div className={`underline ${isCorrectEmail}`}></div>
                     <input
@@ -43,7 +42,6 @@ export const WelcomeBack = props => {
                         name="password"
                         value={password}
                         onChange={e => handleChange(e)}
-                        onBlur={e => handleBlurPassword(e)}
                     />
                     <div className={`underline ${isCorrectPassword}`}></div>
                     {

@@ -16,14 +16,19 @@ class App extends Component {
     };
 
     handleChange = (e) => {
+        e.target.name === 'email'
+            ?
+            this.correctOrIncorrect(this.state.email.match(/.+@.+\..{2,}/), e)
+            :
+            this.correctOrIncorrect(this.state.password.match(/.{8,}/), e);
         this.setState({
             [e.target.name]: e.target.value
         })
     };
 
-    correctOrIncorrect = (bool, e) => {
+    correctOrIncorrect = (boolean, e) => {
         const field = e.target.name === 'email' ? 'isCorrectEmail' : 'isCorrectPassword';
-        if (bool) {
+        if (boolean) {
             this.setState({
                 [field]: 'correct'
             })
@@ -32,14 +37,6 @@ class App extends Component {
                 [field]: 'incorrect'
             })
         }
-    };
-
-    handleBlurEmail = (e) => {
-        this.correctOrIncorrect(this.state.email.match(/.+@.+\..{2,}/), e);
-    };
-
-    handleBlurPassword = (e) => {
-        this.correctOrIncorrect(this.state.password.match(/.{8,}/), e);
     };
 
     isShowPage = () => {
@@ -71,8 +68,6 @@ class App extends Component {
                                 isCorrectPassword={isCorrectPassword}
                                 showPage={this.isShowPage}
                                 handleChange={this.handleChange}
-                                handleBlurEmail={this.handleBlurEmail}
-                                handleBlurPassword={this.handleBlurPassword}
                             />
                         </Route>
                         <Route path="/forgot">
