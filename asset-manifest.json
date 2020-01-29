@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/io-technologies/static/css/main.04266622.chunk.css",
+    "main.css": "/io-technologies/static/css/main.800dd4ab.chunk.css",
     "main.js": "/io-technologies/static/js/main.477241f5.chunk.js",
     "main.js.map": "/io-technologies/static/js/main.477241f5.chunk.js.map",
     "runtime-main.js": "/io-technologies/static/js/runtime-main.ef61999e.js",
@@ -8,9 +8,9 @@
     "static/js/2.b4bdc202.chunk.js": "/io-technologies/static/js/2.b4bdc202.chunk.js",
     "static/js/2.b4bdc202.chunk.js.map": "/io-technologies/static/js/2.b4bdc202.chunk.js.map",
     "index.html": "/io-technologies/index.html",
-    "precache-manifest.18b3184edc8d646cc60488302a887bfa.js": "/io-technologies/precache-manifest.18b3184edc8d646cc60488302a887bfa.js",
+    "precache-manifest.cc631ee5b4b8e73dbedaac19d9042008.js": "/io-technologies/precache-manifest.cc631ee5b4b8e73dbedaac19d9042008.js",
     "service-worker.js": "/io-technologies/service-worker.js",
-    "static/css/main.04266622.chunk.css.map": "/io-technologies/static/css/main.04266622.chunk.css.map",
+    "static/css/main.800dd4ab.chunk.css.map": "/io-technologies/static/css/main.800dd4ab.chunk.css.map",
     "static/js/2.b4bdc202.chunk.js.LICENSE": "/io-technologies/static/js/2.b4bdc202.chunk.js.LICENSE",
     "static/media/welcomBack.css": "/io-technologies/static/media/bg-dark.4cb897e7.svg",
     "static/media/index.css": "/io-technologies/static/media/bg.ac39623f.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.ef61999e.js",
     "static/js/2.b4bdc202.chunk.js",
-    "static/css/main.04266622.chunk.css",
+    "static/css/main.800dd4ab.chunk.css",
     "static/js/main.477241f5.chunk.js"
   ]
 }
