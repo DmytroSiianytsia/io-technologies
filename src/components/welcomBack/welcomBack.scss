@@ -1,6 +1,7 @@
 $dark-text: #616983;
 
 .right-container {
+  display: flex;
   position: absolute;
   right: 0;
   width: 47vw;
@@ -54,7 +55,6 @@ $dark-text: #616983;
   }
 
   &__title {
-    margin-top: 190px;
     margin-bottom: 0;
     font-size: 32px;
     line-height: 28px;

@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="5eee207b-8e53-4ebf-b2c3-c6458f1d7411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forgotPassword/forgotPassword.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forgotPassword/forgotPassword.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forgotPassword/forgotPassword.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forgotPassword/forgotPassword.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forgotPassword/forgotPassword.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forgotPassword/forgotPassword.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,7 +90,7 @@
       <workItem from="1579848557333" duration="20798000" />
       <workItem from="1579872587869" duration="13969000" />
       <workItem from="1580216179746" duration="14894000" />
-      <workItem from="1580286132593" duration="13186000" />
+      <workItem from="1580286132593" duration="15489000" />
     </task>
     <servers />
   </component>

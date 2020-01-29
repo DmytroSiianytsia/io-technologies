@@ -1,4 +1,5 @@
 .right-container {
+  display: flex;
   position: absolute;
   right: 0;
   width: 47vw;
@@ -53,7 +54,6 @@
   background: #616983;
 }
 .inner__title {
-  margin-top: 190px;
   margin-bottom: 0;
   font-size: 32px;
   line-height: 28px;
