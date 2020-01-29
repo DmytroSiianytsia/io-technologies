@@ -1,9 +1,10 @@
 import React from 'react';
 import './main.css';
 
-export const Main = () => {
+export const Main = (props) => {
+    const {showPage} = props;
     return (
-        <div className="main">
+        <div className={`main ${showPage}`}>
             <div className="container">
                 <div className="logo">
                     <img

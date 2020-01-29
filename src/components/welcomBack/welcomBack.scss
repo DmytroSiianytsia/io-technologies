@@ -33,6 +33,26 @@ $dark-text: #616983;
     padding-left: 0;
   }
 
+  .menu-burger {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+
+    @media (max-width: 599px) {
+      display: block;
+    }
+
+    &__item {
+      width: 30px;
+      height: 3px;
+      margin-bottom: 4px;
+      background: $dark-text;
+    }
+  }
+
   &__title {
     margin-top: 190px;
     margin-bottom: 0;

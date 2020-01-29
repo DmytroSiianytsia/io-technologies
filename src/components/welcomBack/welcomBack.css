@@ -33,6 +33,25 @@
     padding-left: 0;
   }
 }
+.inner .menu-burger {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: none;
+  z-index: 2;
+  cursor: pointer;
+}
+@media (max-width: 599px) {
+  .inner .menu-burger {
+    display: block;
+  }
+}
+.inner .menu-burger__item {
+  width: 30px;
+  height: 3px;
+  margin-bottom: 4px;
+  background: #616983;
+}
 .inner__title {
   margin-top: 190px;
   margin-bottom: 0;

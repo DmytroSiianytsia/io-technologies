@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './app.css';
 import {Main} from "./components/main/Main";
 import WelcomeBack from "./components/welcomBack/WelcomeBack";
@@ -6,19 +6,86 @@ import ForgotPassword from "./components/forgotPassword/ForgotPassword";
 import {HashRouter as Router, Switch, Route} from "react-router-dom";
 import Dashboard from "./components/dashboard/Dashboard";
 
-function App() {
-    return (
-        <Router basename="/">
-            <div className="app">
-                <Main/>
-                <Switch>
-                    <Route exact path="/" component={WelcomeBack}/>
-                    <Route path="/forgot" component={ForgotPassword}/>
-                    <Route path="/dashboard" component={Dashboard}/>
-                </Switch>
-            </div>
-        </Router>
-    );
+class App extends Component {
+    state = {
+        email: '',
+        password: '',
+        isCorrectEmail: '',
+        isCorrectPassword: '',
+        showPage: 'hide'
+    };
+
+    handleChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    };
+
+    correctOrIncorrect = (bool, e) => {
+        const field = e.target.name === 'email' ? 'isCorrectEmail' : 'isCorrectPassword';
+        if (bool) {
+            this.setState({
+                [field]: 'correct'
+            })
+        } else {
+            this.setState({
+                [field]: 'incorrect'
+            })
+        }
+    };
+
+    handleBlurEmail = (e) => {
+        this.correctOrIncorrect(this.state.email.match(/.+@.+\..{2,}/), e);
+    };
+
+    handleBlurPassword = (e) => {
+        this.correctOrIncorrect(this.state.password.match(/.{8,}/), e);
+    };
+
+    isShowPage = () => {
+        this.setState(prevState => {
+            return {
+                showPage: prevState.showPage === 'hide' ? 'show' : 'hide'
+            }
+        })
+    };
+
+    render() {
+        const {
+            email,
+            password,
+            isCorrectEmail,
+            isCorrectPassword,
+            showPage
+        } = this.state;
+        return (
+            <Router basename="/">
+                <div className="app">
+                    <Main showPage={showPage}/>
+                    <Switch>
+                        <Route exact path="/">
+                            <WelcomeBack
+                                email={email}
+                                password={password}
+                                isCorrectEmail={isCorrectEmail}
+                                isCorrectPassword={isCorrectPassword}
+                                showPage={this.isShowPage}
+                                handleChange={this.handleChange}
+                                handleBlurEmail={this.handleBlurEmail}
+                                handleBlurPassword={this.handleBlurPassword}
+                            />
+                        </Route>
+                        <Route path="/forgot">
+                            <ForgotPassword/>
+                        </Route>
+                        <Route path="/dashboard">
+                            <Dashboard/>
+                        </Route>
+                    </Switch>
+                </div>
+            </Router>
+        );
+    }
 }
 
 export default App;

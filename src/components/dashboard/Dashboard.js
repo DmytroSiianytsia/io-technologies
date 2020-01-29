@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import './dashboard.css';
 
-function Dashboard(props) {
+function Dashboard() {
     const projects = ['Flirchi', 'io', 'company name', 'facenews.com', 'Flirchi', 'io', 'company name', 'facenews.com'];
     const listProjects = projects.map((project, index) => {
         return (

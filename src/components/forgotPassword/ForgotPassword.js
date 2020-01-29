@@ -2,7 +2,7 @@ import React from 'react';
 import './forgotPassword.css';
 import {Link} from "react-router-dom";
 
-function ForgotPassword(props) {
+function ForgotPassword() {
     return (
         <div className="right-container">
             <div className="inner">
@@ -13,7 +13,7 @@ function ForgotPassword(props) {
                         alt="Back"
                     />
                 </Link>
-                <form action="#" className="inner__form">
+                <form action="#" className="form inner__form">
                     <h2 className="inner__title margin-top100">
                         Forgot password?
                     </h2>
