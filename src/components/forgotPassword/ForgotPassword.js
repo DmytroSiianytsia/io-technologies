@@ -2,7 +2,13 @@ import React from 'react';
 import './forgotPassword.css';
 import {Link} from "react-router-dom";
 
-function ForgotPassword() {
+function ForgotPassword(props) {
+    const {
+        isCorrectEmail,
+        email,
+        handleChange
+    } = props;
+
     return (
         <div className="right-container">
             <div className="inner">
@@ -21,8 +27,11 @@ function ForgotPassword() {
                         className="inner__email margin-top40"
                         type="text"
                         placeholder="Enter your email"
+                        name="email"
+                        value={email}
+                        onChange={e => handleChange(e)}
                     />
-                    <div className={`underline`}></div>
+                    <div className={`underline ${isCorrectEmail}`}></div>
                     <div className="inner__btn margin-top40">
                         SEND ME INSTRUCTIONS
                     </div>

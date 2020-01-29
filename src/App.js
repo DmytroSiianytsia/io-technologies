@@ -71,7 +71,11 @@ class App extends Component {
                             />
                         </Route>
                         <Route path="/forgot">
-                            <ForgotPassword/>
+                            <ForgotPassword
+                                email={email}
+                                isCorrectEmail={isCorrectEmail}
+                                handleChange={this.handleChange}
+                            />
                         </Route>
                         <Route path="/dashboard">
                             <Dashboard email={email}/>

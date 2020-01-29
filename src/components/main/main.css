@@ -9,7 +9,7 @@
 @media (max-width: 999px) {
   .main {
     width: 100vw;
-    min-height: 40vh;
+    max-height: 30vh;
   }
 }
 @media (max-width: 599px) {

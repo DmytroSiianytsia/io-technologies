@@ -10,9 +10,6 @@ export const WelcomeBack = props => {
         isCorrectPassword,
         showPage,
         handleChange,
-        handleBlurEmail,
-        handleBlurPassword,
-        handleSubmit
     } = props;
 
     return (
