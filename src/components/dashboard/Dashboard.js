@@ -2,7 +2,8 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import './dashboard.css';
 
-function Dashboard() {
+function Dashboard(props) {
+    const name = props.email.split('@')[0];
     const projects = ['Flirchi', 'io', 'company name', 'facenews.com', 'Flirchi', 'io', 'company name', 'facenews.com'];
     const listProjects = projects.map((project, index) => {
         return (
@@ -17,7 +18,7 @@ function Dashboard() {
     return (
         <div className="right-container">
             <div className="inner align-center">
-                <h2 className="inner__title">Hi, Nikita!</h2>
+                <h2 className="inner__title">Hi, {name}!</h2>
                 <p className="inner__text">Please choose your project.</p>
                 <div className="frame">
                     {listProjects}

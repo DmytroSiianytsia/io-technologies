@@ -74,7 +74,7 @@ class App extends Component {
                             <ForgotPassword/>
                         </Route>
                         <Route path="/dashboard">
-                            <Dashboard/>
+                            <Dashboard email={email}/>
                         </Route>
                     </Switch>
                 </div>
