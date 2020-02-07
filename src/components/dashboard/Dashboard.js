@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import './dashboard.css';
+import BtnGradient from "../btn-gradient/BtnGradient";
 
-function Dashboard(props) {
-    const name = props.email.split('@')[0];
+function Dashboard({email, logOut}) {
+    const name = email.split('@')[0];
     const projects = ['Flirchi', 'io', 'company name', 'facenews.com', 'Flirchi', 'io', 'company name', 'facenews.com'];
     const listProjects = projects.map((project, index) => {
         return (
@@ -24,14 +25,7 @@ function Dashboard(props) {
                     {listProjects}
                 </div>
                 <Link to="/" className="link">
-                    <div className="inner__btn">
-                        LOG OUT
-                        <img
-                            className="inner__arrow"
-                            src={require('../../img/right-arrow.png')}
-                            alt="log out"
-                        />
-                    </div>
+                   <BtnGradient text="LOG OUT" func={logOut}/>
                 </Link>
             </div>
         </div>

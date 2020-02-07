@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+}
+.logo__img {
+  width: 38px;
+  height: 27px;
+}
+.logo__text {
+  padding-left: 8px;
+  font-family: "Montserrat", "Times New Roman", sans-serif;
+  font-size: 25px;
+  line-height: 27px;
+  color: white;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=logo.css.map */

@@ -1,6 +1,7 @@
 import React from 'react';
 import './forgotPassword.css';
 import {Link} from "react-router-dom";
+import BtnGradient from "../btn-gradient/BtnGradient";
 
 function ForgotPassword(props) {
     const {
@@ -32,9 +33,7 @@ function ForgotPassword(props) {
                         onChange={e => handleChange(e)}
                     />
                     <div className={`underline ${isCorrectEmail}`}></div>
-                    <div className="inner__btn margin-top40">
-                        SEND ME INSTRUCTIONS
-                    </div>
+                   <BtnGradient text="SEND ME INSTRUCTIONS" isArrow={false}/>
                 </form>
             </div>
         </div>

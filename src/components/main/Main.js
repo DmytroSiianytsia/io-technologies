@@ -1,24 +1,18 @@
 import React from 'react';
 import './main.css';
+import Logo from '../logo/Logo';
+import { Btn } from '../btn/Btn';
 
-export const Main = (props) => {
-    const {showPage} = props;
+export const Main = () => {
     return (
-        <div className={`main ${showPage}`}>
+        <div className="main">
             <div className="container">
-                <div className="logo">
-                    <img
-                        className="logo__img"
-                        src={require("../../img/logo.png")}
-                        alt="logo"
-                    />
-                    <div className="logo__text">Technologies</div>
-                </div>
+                <Logo/>
                 <div className="main__text">
                     Get how-to help and instructions or specific features in
-                    <button className="main__btn-help">HELP CENTER</button>
+                    <Btn text="HELP CENTER"/>
                     or
-                    <button className="main__btn-support">SUPPORT</button>
+                    <Btn text="SUPPORT"/>
                 </div>
             </div>
         </div>

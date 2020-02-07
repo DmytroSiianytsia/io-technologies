@@ -1,6 +1,9 @@
 import React from 'react';
 import './welcomBack.css';
 import {Link} from "react-router-dom";
+import BtnGradient from "../btn-gradient/BtnGradient";
+import Logo from "../logo/Logo";
+import { Btn } from "../btn/Btn";
 
 export const WelcomeBack = props => {
     const {
@@ -8,19 +11,16 @@ export const WelcomeBack = props => {
         password,
         isCorrectEmail,
         isCorrectPassword,
-        showPage,
         handleChange,
     } = props;
 
     return (
         <div className="right-container">
             <div className="inner">
-                <div className="menu-burger" onClick={showPage}>
-                    <div className="menu-burger__item"></div>
-                    <div className="menu-burger__item"></div>
-                    <div className="menu-burger__item"></div>
+                <div className="forSmartphone">
+                    <Logo/>
                 </div>
-                <h2 className="inner__title">Welcome back</h2>
+                <h1 className="inner__title">Welcome back</h1>
                 <p className="inner__text">Sign in to continue to IO Technologies.</p>
                 <form className="inner__form">
                     <input
@@ -42,27 +42,13 @@ export const WelcomeBack = props => {
                     />
                     <div className={`underline ${isCorrectPassword}`}></div>
                     {
-                        isCorrectEmail === 'correct' && isCorrectPassword === 'correct'
+                        (isCorrectEmail === 'correct' && isCorrectPassword === 'correct')
                             ?
                             <Link to="/dashboard" className="link">
-                                <div className="inner__btn">
-                                    LOG IN
-                                    <img
-                                        className="inner__arrow"
-                                        src={require('../../img/right-arrow.png')}
-                                        alt="log in"
-                                    />
-                                </div>
+                                <BtnGradient text="LOG IN"/>
                             </Link>
                             :
-                            <div className="inner__btn" title="fill the fields correctly">
-                                LOG IN
-                                <img
-                                    className="inner__arrow"
-                                    src={require('../../img/right-arrow.png')}
-                                    alt="log in"
-                                />
-                            </div>
+                            <BtnGradient text="LOG IN"/>
                     }
                     <div className="inner__reset">
                         Forgot your password?
@@ -71,6 +57,10 @@ export const WelcomeBack = props => {
                         </Link>
                     </div>
                 </form>
+                <div className="group-btn">
+                    <Btn text="HELP CENTER"/>
+                    <Btn text="SUPPORT"/>
+                </div>
             </div>
         </div>
     );

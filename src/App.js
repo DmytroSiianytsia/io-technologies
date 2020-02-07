@@ -11,8 +11,7 @@ class App extends Component {
         email: '',
         password: '',
         isCorrectEmail: '',
-        isCorrectPassword: '',
-        showPage: 'hide'
+        isCorrectPassword: ''
     };
 
     handleChange = (e) => {
@@ -28,7 +27,11 @@ class App extends Component {
 
     correctOrIncorrect = (boolean, e) => {
         const field = e.target.name === 'email' ? 'isCorrectEmail' : 'isCorrectPassword';
-        if (boolean) {
+        if (e.target.value.length === 0) {
+            this.setState({
+                [field]: ''
+            })
+        } else if (boolean) {
             this.setState({
                 [field]: 'correct'
             })
@@ -39,11 +42,12 @@ class App extends Component {
         }
     };
 
-    isShowPage = () => {
-        this.setState(prevState => {
-            return {
-                showPage: prevState.showPage === 'hide' ? 'show' : 'hide'
-            }
+    logOut = () => {
+        this.setState({
+            email: '',
+            password: '',
+            isCorrectEmail: '',
+            isCorrectPassword: ''
         })
     };
 
@@ -53,12 +57,11 @@ class App extends Component {
             password,
             isCorrectEmail,
             isCorrectPassword,
-            showPage
         } = this.state;
         return (
             <Router basename="/">
                 <div className="app">
-                    <Main showPage={showPage}/>
+                    <Main/>
                     <Switch>
                         <Route exact path="/">
                             <WelcomeBack
@@ -66,7 +69,6 @@ class App extends Component {
                                 password={password}
                                 isCorrectEmail={isCorrectEmail}
                                 isCorrectPassword={isCorrectPassword}
-                                showPage={this.isShowPage}
                                 handleChange={this.handleChange}
                             />
                         </Route>
@@ -78,7 +80,10 @@ class App extends Component {
                             />
                         </Route>
                         <Route path="/dashboard">
-                            <Dashboard email={email}/>
+                            <Dashboard
+                                email={email}
+                                logOut={this.logOut}
+                            />
                         </Route>
                     </Switch>
                 </div>
