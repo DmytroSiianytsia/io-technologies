@@ -19,7 +19,7 @@
   .right-container {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     min-width: 280px;
   }
 }
@@ -135,6 +135,11 @@
 @media (max-width: 999px) {
   .inner__reset {
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 599px) {
+  .inner__reset {
+    margin-bottom: 10px;
   }
 }
 .inner__link {

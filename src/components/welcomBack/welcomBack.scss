@@ -20,7 +20,7 @@ $dark-text: #616983;
   @media (max-width: 599px) {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     min-width: 280px;
   }
 }
@@ -157,6 +157,10 @@ $dark-text: #616983;
 
     @media (max-width: 999px) {
       margin-bottom: 40px;
+    }
+
+    @media (max-width: 599px) {
+      margin-bottom: 10px;
     }
   }
 
