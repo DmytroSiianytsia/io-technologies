@@ -21,6 +21,7 @@ class App extends Component {
             this.correctOrIncorrect(this.state.email.match(/.+@.+\..{2,}/), e)
             :
             this.correctOrIncorrect(this.state.password.match(/.{8,}/), e);
+
         this.setState({
             [e.target.name]: e.target.value,
             toolTip: false

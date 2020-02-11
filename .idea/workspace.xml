@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eee207b-8e53-4ebf-b2c3-c6458f1d7411" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/welcomBack/WelcomeBack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/welcomBack/WelcomeBack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +87,7 @@
       <workItem from="1580391702242" duration="524000" />
       <workItem from="1581070078603" duration="23080000" />
       <workItem from="1581326169677" duration="643000" />
-      <workItem from="1581415453978" duration="5512000" />
+      <workItem from="1581415453978" duration="6689000" />
     </task>
     <servers />
   </component>
