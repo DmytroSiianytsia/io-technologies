@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5eee207b-8e53-4ebf-b2c3-c6458f1d7411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/welcomBack/welcomBack.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,7 +86,7 @@
       <workItem from="1580391702242" duration="524000" />
       <workItem from="1581070078603" duration="23080000" />
       <workItem from="1581326169677" duration="643000" />
-      <workItem from="1581415453978" duration="7300000" />
+      <workItem from="1581415453978" duration="7546000" />
     </task>
     <servers />
   </component>

@@ -139,7 +139,7 @@
 }
 @media (max-width: 599px) {
   .inner__reset {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 }
 .inner__link {
