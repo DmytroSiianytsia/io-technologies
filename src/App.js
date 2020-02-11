@@ -11,7 +11,8 @@ class App extends Component {
         email: '',
         password: '',
         isCorrectEmail: '',
-        isCorrectPassword: ''
+        isCorrectPassword: '',
+        toolTip: false
     };
 
     handleChange = (e) => {
@@ -21,7 +22,8 @@ class App extends Component {
             :
             this.correctOrIncorrect(this.state.password.match(/.{8,}/), e);
         this.setState({
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value,
+            toolTip: false
         })
     };
 
@@ -51,12 +53,22 @@ class App extends Component {
         })
     };
 
+    toggleToolTip = () => {
+        const {isCorrectEmail, isCorrectPassword} = this.state;
+        (isCorrectEmail === 'correct' && isCorrectPassword === 'correct')
+            ?
+            this.setState({toolTip: false})
+            :
+            this.setState({toolTip: true})
+    };
+
     render() {
         const {
             email,
             password,
             isCorrectEmail,
             isCorrectPassword,
+            toolTip,
         } = this.state;
         return (
             <Router basename="/">
@@ -69,7 +81,9 @@ class App extends Component {
                                 password={password}
                                 isCorrectEmail={isCorrectEmail}
                                 isCorrectPassword={isCorrectPassword}
+                                toolTip={toolTip}
                                 handleChange={this.handleChange}
+                                toggleToolTip={this.toggleToolTip}
                             />
                         </Route>
                         <Route path="/forgot">

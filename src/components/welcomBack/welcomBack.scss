@@ -126,6 +126,26 @@ $dark-text: #616983;
     }
   }
 
+  .wrong-field {
+    position: relative;
+  }
+
+  .toolTip {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    margin: 8px auto;
+    padding: 5px;
+    text-align: center;
+
+    font-size: 0.7rem;
+    line-height: 1;
+
+    color: white;
+    border: 1px solid red;
+    border-radius: 3px;
+  }
+
   &__reset {
     margin-top: 35px;
     text-align: center;

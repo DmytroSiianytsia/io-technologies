@@ -3,7 +3,7 @@ import './welcomBack.css';
 import {Link} from "react-router-dom";
 import BtnGradient from "../btn-gradient/BtnGradient";
 import Logo from "../logo/Logo";
-import { Btn } from "../btn/Btn";
+import {Btn} from "../btn/Btn";
 
 export const WelcomeBack = props => {
     const {
@@ -12,6 +12,8 @@ export const WelcomeBack = props => {
         isCorrectEmail,
         isCorrectPassword,
         handleChange,
+        toolTip,
+        toggleToolTip,
     } = props;
 
     return (
@@ -48,7 +50,18 @@ export const WelcomeBack = props => {
                                 <BtnGradient text="LOG IN"/>
                             </Link>
                             :
-                            <BtnGradient text="LOG IN"/>
+                            <div className="wrong-field">
+                                {
+                                    toolTip
+                                        ?
+                                        <div className="toolTip">
+                                            fill both of field correctly (password min 8 chars)
+                                        </div>
+                                        :
+                                        ''
+                                }
+                                <BtnGradient text="LOG IN" func={toggleToolTip}/>
+                            </div>
                     }
                     <div className="inner__reset">
                         Forgot your password?
