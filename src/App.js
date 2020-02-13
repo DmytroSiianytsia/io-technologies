@@ -20,11 +20,12 @@ class App extends Component {
             ?
             this.correctOrIncorrect(this.state.email.match(/.+@.+\..{1,}/), e)
             :
-            this.correctOrIncorrect(this.state.password.match(/.{6,}/), e);
+            this.correctOrIncorrect(this.state.password.match(/.{7,}/), e);
         this.setState({
             [e.target.name]: e.target.value,
             toolTip: false
         })
+        console.log(this.state.password)
     };
 
     correctOrIncorrect = (boolean, e) => {
