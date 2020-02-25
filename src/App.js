@@ -21,15 +21,16 @@ class App extends Component {
             this.correctOrIncorrect(this.state.email.match(/.+@.+\..{1,}/), e)
             :
             this.correctOrIncorrect(this.state.password.match(/.{7,}/), e);
+
         this.setState({
             [e.target.name]: e.target.value,
             toolTip: false
-        })
-        console.log(this.state.password)
+        }, () => {console.log('hg',this.state.password)})
     };
 
     correctOrIncorrect = (boolean, e) => {
         const field = e.target.name === 'email' ? 'isCorrectEmail' : 'isCorrectPassword';
+
         if (e.target.value.length === 0) {
             this.setState({
                 [field]: ''
@@ -37,11 +38,11 @@ class App extends Component {
         } else if (boolean) {
             this.setState({
                 [field]: 'correct'
-            })
+            },() => {console.log('correct',this.state.password)} )
         } else {
             this.setState({
                 [field]: 'incorrect'
-            })
+            },() => {console.log('incorrect',this.state.password)} )
         }
     };
 
