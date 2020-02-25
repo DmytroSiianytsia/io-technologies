@@ -18,9 +18,9 @@ class App extends Component {
     handleChange = (e) => {
         e.target.name === 'email'
             ?
-            this.correctOrIncorrect(this.state.email.match(/.+@.+\..{1,}/), e)
+            this.correctOrIncorrect(this.state.email.match(/.+@.+\.\S{1,}/), e)
             :
-            this.correctOrIncorrect(this.state.password.match(/\.{7,}/), e);
+            this.correctOrIncorrect(this.state.password.match(/\.\S{7,}/), e);
 
         this.setState({
             [e.target.name]: e.target.value,
